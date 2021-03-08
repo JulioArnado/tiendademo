@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+/*GLOBAL*/
+*{
+    box-sizing: border-box;
+}
+#override{
+    margin:0;
+    padding:0;
+    background-color: #f4f4f4;
+}
+#override .boton-enlace{
+    text-decoration: none;
+    color:rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    padding:10px 20px;  
+    display: block;
+}
+
+#override .boton-enlace:hover{    
+    background-color: rgba(0,0,0,0.8);
+}
+/*SOCIAL MEDIA NAVBAR*/
+#override .social-media{
+    background-color: #e486cf;
+    padding:8px 0;
+}
+
+#override .social-media ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display:flex;  
+    justify-content:flex-end;
+}
+#override .social-media li{    
+    padding-left:13px;
+}
+
+#override .social-media img{
+    height: 23px;
+}
+
+#override .social-media img:hover{
+    transform: scale(1.2);
+}
+
+/*NAVBAR*/
+#override nav{
+    background-color: #f4f4f4;
+}
+
+#override nav a{
+    color:rgb(0,0,0);
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 20px;
+}
+
+#override nav a:hover{
+    color:#afafaf;
+}
+
+#override nav .active{
+    border-bottom-style: solid;
+    border-color: rgb(100,44,169);
+}
+
+/*CAROUSEL*/
+#override .carousel-inner{
+    position: relative;
+}
+#override .carousel img{
+    filter:brightness(60%);
+}
+
+#override .carousel .frase{
+    position: absolute;
+    bottom:30%;
+}
+#override .carousel h5{
+    margin:0;
+    padding:0;
+    font-size: 5vw;  
+    font-family: 'Permanent Marker', cursive;
+    width:80%;
+    margin:0 auto;
+}
+@media(max-width:768px){
+    #override .carousel .frase{        
+        bottom:20%;
+    }
+    #override .carousel h5{
+        font-size:6vw;
+    }
+}
+
+/*CONTENIDO*/
+/*SECCIÓN GENERAL*/
+#override section{
+    padding:50px 30px;
+}
+/*SECCIÓN 1*/
+#override #seccion-1{    
+    background-color: rgba(63,136,197,0.1);
+}
+
+#override #seccion-1 h1{
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#override #seccion-1 img{
+    width:100%;
+}
+#override #seccion-1 .descripcion{
+    padding:20px 0px;
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
+}
+#override #seccion-1 p{
+    text-align: center;
+    margin:0;
+    width:100%;
+}
+#override #seccion-1 a{
+    width: 60%;
+    text-align: center;
+    margin:10px auto;
+}
+/*SECCIÓN 2*/
+#override #seccion-2{
+    overflow-x: hidden;
+}
+#override #contenedor-seccion-2{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+#override #seccion-2 h2{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#override .caja-ubicacion{
+    position: absolute;
+    background-color: #f4f4f4;
+    padding:30px 150px;
+    top:20%;
+    left:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#override #seccion-2 img{  
+    width:70%;
+}
+#override #seccion-2 p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#override #seccion-2 .boton-enlace{
+    width:150px;
+}
+/*SECCIÓN 3*/
+#override #seccion-3{
+    background-color: rgba(100,44,169,0.1);    
+}
+
+#override #seccion-3 p.titulo-descripcion{
+    font-family: 'RocknRoll One', sans-serif;
+    margin:0;
+    padding:10px 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#override #seccion-3 p{
+    text-align: center;
+    font-size: 14px;
+}
+
+#override #seccion-3 img{
+    height: 200px;
+}
+
+/*FOOTER*/
+#override footer{
+    background-color: rgba(100,44,169,1);
+    color:#f4f4f4;
+    padding:20px 0px;
+}
+#override #redes-sociales img{
+    height: 20px;
+    padding: 0 5px;
+}
+
+#override footer p{
+    text-align: center;
+    margin: 0;
+}
+#override footer ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+#override footer #redes-sociales img:hover{
+    transform: scale(1.2);
+}
+#override #creditos{
+    padding-top:20px;
+}
+
+/*MEDIA QUERIES*/
+/*SOCIAL MEDIA NAVBAR*/
+@media(max-width:576px){
+    #override .social-media ul{
+        justify-content:center;
+    }
+
+    #override nav img{
+        width:250px;
+    }
+}
+
+/*NAVBAR*/
+@media(max-width:440px){
+    #override .navbar-toggler{
+        margin:0 auto;
+    }
+}
+
+/*SECCIÓN 1*/
+@media(max-width:576px){
+    #override #seccion-1 img{
+        width:80%;
+    }
+    
+    #override #seccion-1 .boton-enlace{
+        width:80%;
+    }
+}
+/*SECCIÓN 2*/
+@media(max-width:1046px){    
+    #override #contenedor-seccion-2{
+        position: static;
+        display: block;
+    }    
+    #override .caja-ubicacion{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px 50px;
+    }
+    #override #seccion-2 img{  
+        width:100%;
+    }
+}
+
+/*FOOTER*/
+@media(max-width:768px){
+    #override footer .col-md-4{
+        padding: 20px 0px;
+        border-bottom-style: solid;
+        border-width: 1.5px;
+        width: 80%;
+        margin:0 auto;
+    }
+    #override footer #creditos{
+        padding:20px 0px;
+    }
+}
+
+/*SECCIÓN ROPA Y REGALOS*/
+#override #seccion-ventas{
+    background-color: rgba(63,136,197,0.1);
+}
+#override #seccion-ventas img{
+    width:90%;
+    height:90%;
+    object-fit: cover;    
+}
+#override #seccion-ventas .caja-ropa{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#override #seccion-ventas p{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    margin: 0;    
+    padding:10px 0px;
+}
+#override #seccion-ventas h1{
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 30px;
+}
+/*SECCIÓN CONTACTO*/
+#override #seccion-contacto .caja-contacto{
+    background-color: rgba(63,136,197,0.5);
+    padding: 30px 15px;
+    border-radius: 5px;
+}
+
+#override #seccion-contacto{
+    background-color: rgba(206,187,201,0.3);
+}
+
+#override #seccion-contacto h1{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#override #seccion-contacto p{
+    margin: 0;
+    padding: 5px 0px;
+}
+#override #mapa{
+    margin:20px 0px;
+}
+#override #seccion-mapa{
+    padding-top:0px;
+}
+#override #seccion-mapa h1{
+    font-family: 'RocknRoll One', sans-serif;
+    margin:30px 0px 50px;
+    text-align: center;
+}
+#override #seccion-mapa .caja-mapa{
+    border-style: solid;
+    border-color: rgb(63,136,197);
+    border-radius: 5px;
+}
